@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginTop="8dp"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivCover"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/empty_cover"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="21sp"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                tools:text="Lost"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tvTextNumberOfSeasons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="21sp"
+                android:text="@string/underlined"
+                tools:text="Temporadas"/>
+
+            <TextView
+                android:id="@+id/tvNumberOfSeasons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="20dp"
+                tools:text="nº temp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>

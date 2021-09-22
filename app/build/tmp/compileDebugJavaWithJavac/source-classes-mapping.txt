@@ -1,0 +1,2 @@
+com/example/organizadordeseries/BuildConfig.java
+ com.example.organizadordeseries.BuildConfig

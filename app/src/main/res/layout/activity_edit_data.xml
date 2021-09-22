@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddSerie">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView"
+        android:layout_gravity="center"
+        android:layout_width="149dp"
+        android:layout_height="146dp"
+        android:src="@drawable/empty_cover"
+        tools:srcCompat="@tools:sample/avatars"
+        android:textIsSelectable = "true"/>
+
+    <EditText
+        android:id="@+id/edtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Título" />
+
+    <EditText
+        android:id="@+id/edtNumberOfSeasons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Número de temporadas"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edtNumberChaptersPerSeason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Número de capítulos por temporadas"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edtImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="URL de la imagen"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnSaveChanges"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar cambios" />
+
+    <Button
+        android:id="@+id/btnRemoveSerie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eliminar serie" />
+
+
+</LinearLayout>

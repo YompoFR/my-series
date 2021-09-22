@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.organizadordeseries">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OrganizadorDeSeries">
+        <activity android:name=".ExpandableListAdapter"
+            tools:ignore="Instantiatable"></activity>
+        <activity
+            android:name=".ShowCurrentSerie"
+            android:label="@string/title_activity_show_current_serie" />
+        <activity
+            android:name=".EditData"
+            android:label="@string/title_activity_edit_data" />
+        <activity
+            android:name=".ModifySerie"
+            android:label="Modificar serie" />
+        <activity
+            android:name=".MySeries"
+            android:label="@string/title_activity_following" />
+        <activity
+            android:name=".AddSerie"
+            android:label="@string/title_activity_add_serie" />
+
+        <uses-library
+            android:name="com.google.android.wearable"
+            android:required="false" />
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+        <meta-data
+            android:name="com.google.android.wearable.standalone"
+            android:value="true" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

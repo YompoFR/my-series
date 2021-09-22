@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.organizadordeseries"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="26"
+        android:targetSdkVersion="30" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:extractNativeLibs="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/Theme.OrganizadorDeSeries" >
+        <activity android:name="com.example.organizadordeseries.ExpandableListAdapter" />
+        <activity
+            android:name="com.example.organizadordeseries.ShowCurrentSerie"
+            android:label="@string/title_activity_show_current_serie" />
+        <activity
+            android:name="com.example.organizadordeseries.EditData"
+            android:label="@string/title_activity_edit_data" />
+        <activity
+            android:name="com.example.organizadordeseries.ModifySerie"
+            android:label="Modificar serie" />
+        <activity
+            android:name="com.example.organizadordeseries.MySeries"
+            android:label="@string/title_activity_following" />
+        <activity
+            android:name="com.example.organizadordeseries.AddSerie"
+            android:label="@string/title_activity_add_serie" />
+
+        <uses-library
+            android:name="com.google.android.wearable"
+            android:required="false" />
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+        <meta-data
+            android:name="com.google.android.wearable.standalone"
+            android:value="true" />
+
+        <activity android:name="com.example.organizadordeseries.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.example.organizadordeseries.com.squareup.picasso"
+            android:exported="false" />
+    </application>
+
+</manifest>

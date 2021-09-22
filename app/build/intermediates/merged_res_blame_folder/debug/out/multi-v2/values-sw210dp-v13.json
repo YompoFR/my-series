@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/ivan/MEGAsync/Proyecto/OrganizadordeSeries/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw210dp-v13/values-sw210dp-v13.xml",
+            "map": [
+                {
+                    "source": "/home/ivan/.gradle/caches/transforms-2/files-2.1/f88d5df7b256ef29f41dcc28d5b86640/wear-1.0.0/res/values-sw210dp-v13/values-sw210dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,126,198,265",
+                        "endColumns": "70,71,66,54",
+                        "endOffsets": "121,193,260,315"
+                    }
+                }
+            ]
+        }
+    ]
+}

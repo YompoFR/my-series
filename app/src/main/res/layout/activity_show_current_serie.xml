@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ShowCurrentSerie">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageSerie"
+        android:layout_gravity="center"
+        android:layout_width="149dp"
+        android:layout_height="146dp"
+        android:src="@drawable/empty_cover"
+        tools:srcCompat="@tools:sample/avatars"
+        android:textIsSelectable = "true"/>
+
+    <ExpandableListView
+        android:id="@+id/expandableShowCurrentSerie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
