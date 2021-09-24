@@ -1,12 +1,10 @@
-package com.example.organizadordeseries
+package com.example.seriesorganizer
 
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_show_current_serie.*
 import java.lang.Exception
-import android.view.ActionMode
 import android.widget.*
 
 

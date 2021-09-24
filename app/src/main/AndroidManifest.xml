@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.organizadordeseries">
+    package="com.example.seriesorganizer">
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
@@ -14,22 +14,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.OrganizadorDeSeries">
-        <activity android:name=".ExpandableListAdapter"
+        <activity android:name="com.example.seriesorganizer.ExpandableListAdapter"
             tools:ignore="Instantiatable"></activity>
         <activity
-            android:name=".ShowCurrentSerie"
+            android:name="com.example.seriesorganizer.ShowCurrentSerie"
             android:label="@string/title_activity_show_current_serie" />
         <activity
-            android:name=".EditData"
+            android:name="com.example.seriesorganizer.EditData"
             android:label="@string/title_activity_edit_data" />
         <activity
-            android:name=".ModifySerie"
+            android:name="com.example.seriesorganizer.ModifySerie"
             android:label="@string/title_activity_modify_serie" />
         <activity
-            android:name=".MySeries"
+            android:name="com.example.seriesorganizer.MySeries"
             android:label="@string/title_activity_following" />
         <activity
-            android:name=".AddSerie"
+            android:name="com.example.seriesorganizer.AddSerie"
             android:label="@string/title_activity_add_serie" />
 
         <uses-library
@@ -43,7 +43,7 @@
             android:name="com.google.android.wearable.standalone"
             android:value="true" />
 
-        <activity android:name=".MainActivity">
+        <activity android:name="com.example.seriesorganizer.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

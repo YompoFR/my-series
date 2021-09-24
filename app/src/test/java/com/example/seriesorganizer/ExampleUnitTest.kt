@@ -1,4 +1,4 @@
-package com.example.organizadordeseries
+package com.example.seriesorganizer
 
 import org.junit.Test
 

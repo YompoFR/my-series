@@ -1,19 +1,13 @@
-package com.example.organizadordeseries
+package com.example.seriesorganizer
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.ActionMode
-import android.view.Menu
-import android.view.MenuItem
-import android.widget.AbsListView
 import android.widget.LinearLayout
-import android.widget.ListView
 import android.widget.Toast
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_my_series.*
-import kotlinx.android.synthetic.main.activity_show_current_serie.*
 
 class ModifySerie : AppCompatActivity(), SerieAdapter.OnSerieClickListener {
 

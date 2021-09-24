@@ -1,4 +1,4 @@
-package com.example.organizadordeseries
+package com.example.seriesorganizer
 
 class Utilities {
     companion object {

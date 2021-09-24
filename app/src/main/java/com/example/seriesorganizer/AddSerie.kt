@@ -1,12 +1,10 @@
-package com.example.organizadordeseries
+package com.example.seriesorganizer
 
-import android.content.ContentValues
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_add_serie.*
 import java.lang.NumberFormatException
-import com.example.organizadordeseries.Utilities
 
 class AddSerie : AppCompatActivity() {
 

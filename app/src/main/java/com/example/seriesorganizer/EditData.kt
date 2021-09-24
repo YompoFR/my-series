@@ -1,6 +1,5 @@
-package com.example.organizadordeseries
+package com.example.seriesorganizer
 
-import android.content.ContentValues
 import android.content.DialogInterface
 import android.os.Bundle
 import android.widget.Toast

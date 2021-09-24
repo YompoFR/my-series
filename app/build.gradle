@@ -9,7 +9,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.example.organizadordeseries"
+        applicationId "com.example.seriesorganizer"
         minSdkVersion 26
         targetSdkVersion 30
         versionCode 1

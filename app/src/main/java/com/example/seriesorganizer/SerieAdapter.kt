@@ -1,14 +1,11 @@
-package com.example.organizadordeseries
+package com.example.seriesorganizer
 
 import android.content.Context
 import android.graphics.Color
 import android.view.*
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.item_serie.view.*
-import android.view.ActionMode.Callback
-import kotlinx.android.synthetic.main.activity_modify_serie.view.*
 
 class SerieAdapter(
         val context: Context,

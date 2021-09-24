@@ -1,4 +1,4 @@
-package com.example.organizadordeseries
+package com.example.seriesorganizer
 
 data class Serie(
         var id: Int = 0,

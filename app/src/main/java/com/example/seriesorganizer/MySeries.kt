@@ -1,8 +1,6 @@
-package com.example.organizadordeseries
+package com.example.seriesorganizer
 
-import android.app.Notification
 import android.content.Intent
-import android.database.Cursor
 import android.os.Bundle
 import android.widget.LinearLayout
 import android.widget.Toast
@@ -10,7 +8,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_my_series.*
-import android.view.ActionMode
 
 
 class MySeries : AppCompatActivity(), SerieAdapter.OnSerieClickListener {
