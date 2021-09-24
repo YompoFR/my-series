@@ -8,7 +8,6 @@ class SQLiteConnectionHelper(context: Context) :
     SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION) {
 
     companion object {
-        // Si cambias el esquema de la base de datos, debemos incrementar la version de la misma
         const val DATABASE_VERSION = 1
         const val DATABASE_NAME = "organizadordeseries.db"
     }

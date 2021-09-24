@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.example.organizadordeseries"
+3    package="com.example.seriesorganizer"
 4    android:versionCode="1"
 5    android:versionName="1.0" >
 6
@@ -36,37 +36,37 @@
 23        android:testOnly="true"
 24        android:theme="@style/Theme.OrganizadorDeSeries" >
 24-->C:\Users\Ivan\Documents\MEGAsync\Proyecto\OrganizadordeSeries\app\src\main\AndroidManifest.xml:16:9-57
-25        <activity android:name="com.example.organizadordeseries.ExpandableListAdapter" />
+25        <activity android:name="com.example.seriesorganizer.ExpandableListAdapter" />
 25-->C:\Users\Ivan\Documents\MEGAsync\Proyecto\OrganizadordeSeries\app\src\main\AndroidManifest.xml:17:9-18:54
-25-->C:\Users\Ivan\Documents\MEGAsync\Proyecto\OrganizadordeSeries\app\src\main\AndroidManifest.xml:17:19-56
+25-->C:\Users\Ivan\Documents\MEGAsync\Proyecto\OrganizadordeSeries\app\src\main\AndroidManifest.xml:17:19-83
 26        <activity
 26-->C:\Users\Ivan\Documents\MEGAsync\Proyecto\OrganizadordeSeries\app\src\main\AndroidManifest.xml:19:9-21:73
-27            android:name="com.example.organizadordeseries.ShowCurrentSerie"
-27-->C:\Users\Ivan\Documents\MEGAsync\Proyecto\OrganizadordeSeries\app\src\main\AndroidManifest.xml:20:13-45
+27            android:name="com.example.seriesorganizer.ShowCurrentSerie"
+27-->C:\Users\Ivan\Documents\MEGAsync\Proyecto\OrganizadordeSeries\app\src\main\AndroidManifest.xml:20:13-72
 28            android:label="@string/title_activity_show_current_serie" />
 28-->C:\Users\Ivan\Documents\MEGAsync\Proyecto\OrganizadordeSeries\app\src\main\AndroidManifest.xml:21:13-70
 29        <activity
 29-->C:\Users\Ivan\Documents\MEGAsync\Proyecto\OrganizadordeSeries\app\src\main\AndroidManifest.xml:22:9-24:64
-30            android:name="com.example.organizadordeseries.EditData"
-30-->C:\Users\Ivan\Documents\MEGAsync\Proyecto\OrganizadordeSeries\app\src\main\AndroidManifest.xml:23:13-37
+30            android:name="com.example.seriesorganizer.EditData"
+30-->C:\Users\Ivan\Documents\MEGAsync\Proyecto\OrganizadordeSeries\app\src\main\AndroidManifest.xml:23:13-64
 31            android:label="@string/title_activity_edit_data" />
 31-->C:\Users\Ivan\Documents\MEGAsync\Proyecto\OrganizadordeSeries\app\src\main\AndroidManifest.xml:24:13-61
 32        <activity
 32-->C:\Users\Ivan\Documents\MEGAsync\Proyecto\OrganizadordeSeries\app\src\main\AndroidManifest.xml:25:9-27:67
-33            android:name="com.example.organizadordeseries.ModifySerie"
-33-->C:\Users\Ivan\Documents\MEGAsync\Proyecto\OrganizadordeSeries\app\src\main\AndroidManifest.xml:26:13-40
+33            android:name="com.example.seriesorganizer.ModifySerie"
+33-->C:\Users\Ivan\Documents\MEGAsync\Proyecto\OrganizadordeSeries\app\src\main\AndroidManifest.xml:26:13-67
 34            android:label="@string/title_activity_modify_serie" />
 34-->C:\Users\Ivan\Documents\MEGAsync\Proyecto\OrganizadordeSeries\app\src\main\AndroidManifest.xml:27:13-64
 35        <activity
 35-->C:\Users\Ivan\Documents\MEGAsync\Proyecto\OrganizadordeSeries\app\src\main\AndroidManifest.xml:28:9-30:64
-36            android:name="com.example.organizadordeseries.MySeries"
-36-->C:\Users\Ivan\Documents\MEGAsync\Proyecto\OrganizadordeSeries\app\src\main\AndroidManifest.xml:29:13-37
+36            android:name="com.example.seriesorganizer.MySeries"
+36-->C:\Users\Ivan\Documents\MEGAsync\Proyecto\OrganizadordeSeries\app\src\main\AndroidManifest.xml:29:13-64
 37            android:label="@string/title_activity_following" />
 37-->C:\Users\Ivan\Documents\MEGAsync\Proyecto\OrganizadordeSeries\app\src\main\AndroidManifest.xml:30:13-61
 38        <activity
 38-->C:\Users\Ivan\Documents\MEGAsync\Proyecto\OrganizadordeSeries\app\src\main\AndroidManifest.xml:31:9-33:64
-39            android:name="com.example.organizadordeseries.AddSerie"
-39-->C:\Users\Ivan\Documents\MEGAsync\Proyecto\OrganizadordeSeries\app\src\main\AndroidManifest.xml:32:13-37
+39            android:name="com.example.seriesorganizer.AddSerie"
+39-->C:\Users\Ivan\Documents\MEGAsync\Proyecto\OrganizadordeSeries\app\src\main\AndroidManifest.xml:32:13-64
 40            android:label="@string/title_activity_add_serie" />
 40-->C:\Users\Ivan\Documents\MEGAsync\Proyecto\OrganizadordeSeries\app\src\main\AndroidManifest.xml:33:13-61
 41
@@ -87,9 +87,9 @@
 51            android:value="true" />
 51-->C:\Users\Ivan\Documents\MEGAsync\Proyecto\OrganizadordeSeries\app\src\main\AndroidManifest.xml:44:13-33
 52
-53        <activity android:name="com.example.organizadordeseries.MainActivity" >
+53        <activity android:name="com.example.seriesorganizer.MainActivity" >
 53-->C:\Users\Ivan\Documents\MEGAsync\Proyecto\OrganizadordeSeries\app\src\main\AndroidManifest.xml:46:9-52:20
-53-->C:\Users\Ivan\Documents\MEGAsync\Proyecto\OrganizadordeSeries\app\src\main\AndroidManifest.xml:46:19-47
+53-->C:\Users\Ivan\Documents\MEGAsync\Proyecto\OrganizadordeSeries\app\src\main\AndroidManifest.xml:46:19-74
 54            <intent-filter>
 54-->C:\Users\Ivan\Documents\MEGAsync\Proyecto\OrganizadordeSeries\app\src\main\AndroidManifest.xml:47:13-51:29
 55                <action android:name="android.intent.action.MAIN" />
@@ -106,7 +106,7 @@
 61-->[com.squareup.picasso:picasso:2.71828] C:\Users\Ivan\.gradle\caches\transforms-2\files-2.1\f35c9e1e4871d28ac3fe3c052bd571a4\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
 62            android:name="com.squareup.picasso.PicassoProvider"
 62-->[com.squareup.picasso:picasso:2.71828] C:\Users\Ivan\.gradle\caches\transforms-2\files-2.1\f35c9e1e4871d28ac3fe3c052bd571a4\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
-63            android:authorities="com.example.organizadordeseries.com.squareup.picasso"
+63            android:authorities="com.example.seriesorganizer.com.squareup.picasso"
 63-->[com.squareup.picasso:picasso:2.71828] C:\Users\Ivan\.gradle\caches\transforms-2\files-2.1\f35c9e1e4871d28ac3fe3c052bd571a4\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
 64            android:exported="false" />
 64-->[com.squareup.picasso:picasso:2.71828] C:\Users\Ivan\.gradle\caches\transforms-2\files-2.1\f35c9e1e4871d28ac3fe3c052bd571a4\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37

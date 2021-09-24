@@ -12,7 +12,6 @@ import kotlinx.android.synthetic.main.activity_my_series.*
 
 class MySeries : AppCompatActivity(), SerieAdapter.OnSerieClickListener {
 
-    // Lista estática
     companion object {
         var listSerie = mutableListOf<Serie>()
     }
@@ -21,9 +20,9 @@ class MySeries : AppCompatActivity(), SerieAdapter.OnSerieClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_my_series)
 
-        initRecycler() // Inicamos el reclycler para que nos muestre la lista
+        initRecycler() // Show list
         val toastText = this.getString(R.string.toast_number_of_series) + " "
-        Toast.makeText(this, "$toastText" + listSerie.size, Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, toastText + listSerie.size, Toast.LENGTH_SHORT).show()
     }
 
     fun initRecycler() {
@@ -40,7 +39,7 @@ class MySeries : AppCompatActivity(), SerieAdapter.OnSerieClickListener {
         numberOfSeasons: Int,
         numberChaptersPerSeason: Int,
         image: String
-    ) { // Pasamos todos los parámetros a la activity para que nos muestre las temporadas
+    ) { // Pass all Arguments to other activity to show seasons
         val intent = Intent(this, ShowCurrentSerie::class.java)
         intent.putExtra("id", id)
         intent.putExtra("title", title)

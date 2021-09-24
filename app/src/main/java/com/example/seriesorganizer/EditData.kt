@@ -30,9 +30,9 @@ class EditData : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_edit_data)
 
-        checkIntentInfo() // Comprobamos si el intent contiene datos
+        checkIntentInfo()
 
-        btnRemoveSerie.setOnClickListener(){ // Establecemos una alerta para confirmar si eliminamos la serie
+        btnRemoveSerie.setOnClickListener(){ // Establish alert dialog to be sure when removing
             val title = this.getString(R.string.builder_title)
             val message = this.getString(R.string.builder_message)
             val positiveButtonText = this.getString(R.string.builder_positive_button)
@@ -42,7 +42,7 @@ class EditData : AppCompatActivity() {
             builder.setMessage(message)
 
             builder.setPositiveButton(positiveButtonText){ dialogInterface: DialogInterface, i: Int ->
-                manageDatabase.removeSerie(id) // En caso afirmativo se elimina la serie
+                manageDatabase.removeSerie(id) // Delete serie in case is positive
                 finish()
             }
 
@@ -68,10 +68,9 @@ class EditData : AppCompatActivity() {
         }
     }
 
-    // Comprobamos si el intent está vacío
     private fun checkIntentInfo() {
         if (intent.extras != null) {
-            // Rellenamos los campos con la información recogida
+            // Filling fields with extracted info
             id = intent.getIntExtra("id", 0)
             edtTitle.setText(intent.getStringExtra("title"))
             edtNumberOfSeasons.setText(intent.getIntExtra("numberOfSeasons", 1).toString())
@@ -82,13 +81,12 @@ class EditData : AppCompatActivity() {
         }
     }
 
-    // Modificamos la serie
     private fun modifySerie() {
         collectInfo()
         assignInfo()
     }
 
-    // Establecemos las variables con la información de los campos
+    // Establish variables with info extracted from fields
     private fun collectInfo() {
         title = edtTitle.text.toString()
         numberSeasons = edtNumberOfSeasons.text.toString().toInt()
@@ -96,7 +94,7 @@ class EditData : AppCompatActivity() {
         checkImage()
     }
 
-    // Comprobamos si la imagen está vacía
+    // Check if image is empty
     private fun checkImage() {
         var edtImage = edtImage.text.toString()
         image = if (edtImage.isEmpty()) intent.getStringExtra("image").toString()
@@ -105,7 +103,6 @@ class EditData : AppCompatActivity() {
         }
     }
 
-    // Asignamos la información
     private fun assignInfo() {
         toastText = this.getString(R.string.toast_set_title)
         if (title.isEmpty()) {

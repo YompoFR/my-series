@@ -15,13 +15,13 @@ class ModifySerie : AppCompatActivity(), SerieAdapter.OnSerieClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_modify_serie)
 
-        initRecycler() // Iniciamos el recycler
+        initRecycler()
     }
 
     fun initRecycler() {
         rvSerie.layoutManager = LinearLayoutManager(this)
         rvSerie.addItemDecoration(DividerItemDecoration(this, LinearLayout.VERTICAL))
-        var adapter = SerieAdapter(this, MySeries.listSerie, this)
+        val adapter = SerieAdapter(this, MySeries.listSerie, this)
         rvSerie.adapter = adapter
     }
 

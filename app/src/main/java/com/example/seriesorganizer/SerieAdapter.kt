@@ -27,7 +27,7 @@ class SerieAdapter(
     override fun onBindViewHolder(holder: SerieAdapter.SerieHolder, position: Int) {
         when (holder) {
             is SerieHolder -> holder.onBind(listSerie[position], position)
-            else -> throw IllegalArgumentException("No se ha pasado el holder")
+            else -> throw IllegalArgumentException("Holder is not passing")
         }
     }
 
@@ -58,12 +58,11 @@ class SerieAdapter(
 
         fun onBind(serie: Serie, position: Int) {
 
-            // Rellenamos los campos
+            // Filling fields
             view.tvTitle.text = serie.title
             view.tvNumberOfSeasons.text = serie.numberSeasons.toString()
             Picasso.get().load(serie.image).into(view.ivCover)
 
-            // Establecemos el click
             itemView.setOnClickListener {
                 itemClickListener.onItemClick(serie.id, serie.title, serie.numberSeasons, serie.numberChaptersPerSeason, serie.image)
             }

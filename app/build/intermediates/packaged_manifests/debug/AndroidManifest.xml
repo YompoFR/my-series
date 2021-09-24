@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.organizadordeseries"
+    package="com.example.seriesorganizer"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -22,21 +22,21 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.OrganizadorDeSeries" >
-        <activity android:name="com.example.organizadordeseries.ExpandableListAdapter" />
+        <activity android:name="com.example.seriesorganizer.ExpandableListAdapter" />
         <activity
-            android:name="com.example.organizadordeseries.ShowCurrentSerie"
+            android:name="com.example.seriesorganizer.ShowCurrentSerie"
             android:label="@string/title_activity_show_current_serie" />
         <activity
-            android:name="com.example.organizadordeseries.EditData"
+            android:name="com.example.seriesorganizer.EditData"
             android:label="@string/title_activity_edit_data" />
         <activity
-            android:name="com.example.organizadordeseries.ModifySerie"
+            android:name="com.example.seriesorganizer.ModifySerie"
             android:label="@string/title_activity_modify_serie" />
         <activity
-            android:name="com.example.organizadordeseries.MySeries"
+            android:name="com.example.seriesorganizer.MySeries"
             android:label="@string/title_activity_following" />
         <activity
-            android:name="com.example.organizadordeseries.AddSerie"
+            android:name="com.example.seriesorganizer.AddSerie"
             android:label="@string/title_activity_add_serie" />
 
         <uses-library
@@ -50,7 +50,7 @@
             android:name="com.google.android.wearable.standalone"
             android:value="true" />
 
-        <activity android:name="com.example.organizadordeseries.MainActivity" >
+        <activity android:name="com.example.seriesorganizer.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -60,7 +60,7 @@
 
         <provider
             android:name="com.squareup.picasso.PicassoProvider"
-            android:authorities="com.example.organizadordeseries.com.squareup.picasso"
+            android:authorities="com.example.seriesorganizer.com.squareup.picasso"
             android:exported="false" />
     </application>
 

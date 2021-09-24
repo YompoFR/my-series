@@ -26,9 +26,9 @@ class ShowCurrentSerie : AppCompatActivity(){
         setContentView(R.layout.activity_show_current_serie)
 
         try {
-            checkIntentInfo() // Si el intent no está vacío, asignamos valor a las variables
-            fill() // Rellenamos tanto el header como el body
-            expandableShowCurrentSerie.setAdapter(ExpandableListAdapter(this, id, header, body)) // Establecemos el adapter de la lista expandible
+            checkIntentInfo() // If intent is not empty, we assing the values to variables
+            fill() // Fill header and body
+            expandableShowCurrentSerie.setAdapter(ExpandableListAdapter(this, id, header, body)) // Set adapter from expandable list adapter
 
         } catch (e: Exception){
             val toastText = this.getString(R.string.exception)
@@ -37,7 +37,6 @@ class ShowCurrentSerie : AppCompatActivity(){
         }
     }
 
-    // Función para comprobar si el intent tiene datos
     private fun checkIntentInfo() {
         if (intent.extras != null) {
             id = intent.getIntExtra("id", 1)
@@ -50,7 +49,7 @@ class ShowCurrentSerie : AppCompatActivity(){
         }
     }
 
-    // Rellenamos tanto el header como el body
+    // Fill header and body
     private fun fill(){
         var seasonTitle = this.getString(R.string.fill_season) + " "
         var chapterTitle = this.getString(R.string.fill_chapter) + " "
@@ -65,9 +64,9 @@ class ShowCurrentSerie : AppCompatActivity(){
             for(j in 1..numberChaptersPerSeason){
                 var checkBox = CheckBox(this)
                 checkBox.text = chapterTitle + j
-                checkBox.id = ("" + i + j).toInt() // Para que sea temporada 1 capitulo 13 = 113
-                checkBox.isSelected = manageDatabase.getCheckBoxState(this, id , checkBox.id) // Recogemos los datos si ese checkbox está marcado
-                checkBoxList.add(checkBox) // Añadimos el checkbox a la lista de checkbox
+                checkBox.id = ("" + i + j).toInt() // To have season 1 chapter 13 = 133, to change appropriate checkbox data easily
+                checkBox.isSelected = manageDatabase.getCheckBoxState(this, id , checkBox.id) // Get data if checkbox is checked
+                checkBoxList.add(checkBox) // Add checkbox to checkbox list
             }
             body.add(checkBoxList)
         }

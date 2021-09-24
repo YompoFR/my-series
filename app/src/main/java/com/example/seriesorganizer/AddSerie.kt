@@ -10,7 +10,7 @@ class AddSerie : AppCompatActivity() {
 
     val manageDatabase = ManageDatabase(this)
 
-    // Variables para crear el objeto serie
+    // Variables to create "serie" object
     lateinit var title: String
     var numberSeasons = 0
     var numberChaptersPerSeason = 0
@@ -22,23 +22,22 @@ class AddSerie : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_serie)
 
-        cleanFields() // Limpiamos los campos siempre
+        cleanFields() // We always clean fields
 
-        // Establecemos el botón de registrar
         btnRegister.setOnClickListener() {
             val toastText = this.getString(R.string.toast_btn_register)
             try {
                 setFields()
                 checkTitleAndRegister()
                 cleanFields()
-            } catch (e: NumberFormatException) { // Para evitar el error de pasar de String a Int al no poner número de temporadas
+            } catch (e: NumberFormatException) { // To prevent an error when passing from string to int when we don't put a number
                 Toast.makeText(this, toastText, Toast.LENGTH_SHORT).show()
                 cleanFields()
             }
         }
     }
 
-    // Extraemos el valor de los campos y lo asignamos a las variables
+    // Extract the values of fields and assing to variables
     fun setFields(){
         title = edtTitle.text.toString()
         numberSeasons = edtNumberOfSeasons.text.toString().toInt()
@@ -46,22 +45,20 @@ class AddSerie : AppCompatActivity() {
         image = edtImage.text.toString()
     }
 
-    // Comprobamos el título
     fun checkTitleAndRegister(){
         val toastText = this.getString(R.string.toast_set_title)
         if (title.isEmpty()) {
             Toast.makeText(this, toastText, Toast.LENGTH_SHORT).show()
             cleanFields()
         }
-        else { // Asignamos una imagen por defecto en caso de que no pongamos ninguna
+        else { // Assign a default image in case that we dont put anything
             if (image.isEmpty()) image = defaultImage
 
-            // Registramos la serie en la base de datos
+            // Save serie in database
             manageDatabase.registerSerie(this, title, numberSeasons, numberChaptersPerSeason, image)
         }
     }
 
-    // Función para limpiar los campos
     fun cleanFields() {
         edtTitle.text.clear()
         edtNumberOfSeasons.text.clear()

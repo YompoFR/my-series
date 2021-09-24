@@ -15,19 +15,16 @@ class MainActivity : AppCompatActivity() {
 
         manageDatabase.readDataBase()
 
-        // Creamos el botón para ir a la actividad "Añadir serie"
         btnAdd.setOnClickListener(){
             val intent = Intent(this, AddSerie::class.java)
             startActivity(intent)
         }
 
-        // Creamos el botón para ir a la actividad "Seguimiento"
         btnMySeries.setOnClickListener(){
             val intent = Intent(this, MySeries::class.java)
             startActivity(intent)
         }
 
-        // Creamos el botón para ir a la actividad "Modificar serie"
         btnModify.setOnClickListener(){
             val intent = Intent(this, ModifySerie::class.java)
             startActivity(intent)

@@ -2,7 +2,7 @@ package com.example.seriesorganizer
 
 class Utilities {
     companion object {
-        // Constantes Campos Tabla Usuario
+        // Constants Fields Table User
         const val TABLE_SERIES = "series"
         const val COLUMN_ID = "id"
         const val COLUMN_TITLE = "title"
@@ -10,7 +10,7 @@ class Utilities {
         const val COLUMN_NUMBER_CHAPTERS_PER_SEASON = "numberChaptersPerSeason"
         const val COLUMN_IMAGE = "image"
 
-        // Constantes Campos Tabla Checkbox
+        // Constants Fields Table Checkbox
         const val TABLE_CHECKBOX = "checkbox"
         const val COLUMN_SERIE_ID = "serieId"
         const val COLUMN_CHECKBOX_ID = "checkboxId"
@@ -18,14 +18,15 @@ class Utilities {
         const val COLUMN_CHILD_POSITION = "childPosition"
         const val COLUMN_CHECKED = "checked"
 
-        // Constantes Campos Tabla Seasons
+        // Constants Fields Table Seasons
         const val TABLE_SEASONS = "seasons"
         const val COLUMN_SERIE_SEASON_ID = "serieSeasonId"
         const val COLUMN_SEASON_ID = "seasonId"
         const val COLUMN_SEASON_TITLE = "title"
         const val COLUMN_SEASON_NUMBER_CHAPTERS = "numberChapters"
 
-        // Sentencia SQL para crear tabla
+        // #### SQL sentences to create tables
+
         val CREATE_SERIE_TABLE = "CREATE TABLE $TABLE_SERIES (" +
                 "$COLUMN_ID INTEGER PRIMARY KEY AUTOINCREMENT," +
                 "$COLUMN_TITLE TEXT, " +
@@ -33,7 +34,6 @@ class Utilities {
                 "$COLUMN_NUMBER_CHAPTERS_PER_SEASON INTEGER, " +
                 "$COLUMN_IMAGE TEXT)"
 
-        // Sentencia SQL para crear tabla
         val CREATE_CHECKBOX_TABLE = "CREATE TABLE $TABLE_CHECKBOX (" +
                 "$COLUMN_SERIE_ID INTEGER, " +
                 "$COLUMN_CHECKBOX_ID INTEGER, " +
@@ -41,7 +41,6 @@ class Utilities {
                 "$COLUMN_CHILD_POSITION INTEGER, " +
                 "$COLUMN_CHECKED TEXT)"
 
-        // Sentencia SQL para crear tabla
         val CREATE_SEASONS_TABLE = "CREATE TABLE $TABLE_SEASONS (" +
                 "$COLUMN_SERIE_SEASON_ID INTEGER, " +
                 "$COLUMN_SEASON_ID INTEGER, " +

@@ -10,7 +10,7 @@ class ManageDatabase(contex: Context) {
 
     val dbHelper = SQLiteConnectionHelper(contex)
 
-    // Funciones para hacer debug
+    // Debug functions
 
     fun debugCheckBox(cursor: Cursor) {
         println("SERIE ID " + cursor.getInt(0))
@@ -29,7 +29,7 @@ class ManageDatabase(contex: Context) {
         println()
     }
 
-    // Funciones de la base de datos serie
+    // Serie database functions
 
     fun readDataBase() {
         val query = "SELECT * FROM ${Utilities.TABLE_SERIES}"
@@ -112,7 +112,7 @@ class ManageDatabase(contex: Context) {
     }
 
     // #######################
-    // Funciones del checkbox
+    // Checkbox functions
 
     fun setCheckboxState(
         serieId: Int,
