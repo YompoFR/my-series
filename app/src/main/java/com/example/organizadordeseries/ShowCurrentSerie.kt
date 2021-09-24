@@ -53,16 +53,19 @@ class ShowCurrentSerie : AppCompatActivity(){
 
     // Rellenamos tanto el header como el body
     private fun fill(){
+        var seasonTitle = this.getString(R.string.fill_season) + " "
+        var chapterTitle = this.getString(R.string.fill_chapter) + " "
+
         for(i in 1..numberOfSeasons){
-            header.add("Temporada " + i)
-            var seasonTitle = ("Temporada " + i)
+            header.add(seasonTitle + i)
+            var seasonTitle = (seasonTitle + i)
 
             manageDatabase.saveSeasons(id, i, seasonTitle, numberChaptersPerSeason)
 
             var checkBoxList : MutableList<CheckBox> = mutableListOf()
             for(j in 1..numberChaptersPerSeason){
                 var checkBox = CheckBox(this)
-                checkBox.text = "Capítulo " + j
+                checkBox.text = chapterTitle + j
                 checkBox.id = ("" + i + j).toInt() // Para que sea temporada 1 capitulo 13 = 113
                 checkBox.isSelected = manageDatabase.getCheckBoxState(this, id , checkBox.id) // Recogemos los datos si ese checkbox está marcado
                 checkBoxList.add(checkBox) // Añadimos el checkbox a la lista de checkbox

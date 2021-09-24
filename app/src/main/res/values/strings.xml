@@ -1,14 +1,31 @@
 <resources>
-    <string name="app_name">Organizador de Series</string>
-    <string name="title_activity_add_serie">Añadir Serie</string>
-    <string name="title_activity_following">Mis Series</string>
-    <string name="title_activity_edit_data">Modificar Datos</string>
-    <string name="title_activity_show_current_serie">Tu Serie</string>
-    <string name="underlined"><u>Temporadas</u></string>
+    <string name="app_name">My Series</string>
+    <string name="title_activity_add_serie">Add Serie</string>
+    <string name="title_activity_following">My Series</string>
+    <string name="title_activity_edit_data">Modify Data</string>
+    <string name="title_activity_show_current_serie">Your Serie</string>
+    <string name="underlined"><u>Seasons</u></string>
 
     <!--
     This string is used for square devices and overridden by hello_world in
     values-round/strings.xml for round devices.
     -->
     <string name="hello_world">Hello Square World!</string>
+    <string name="edt_title">Title</string>
+    <string name="edt_number_of_seasons">Number of seasons</string>
+    <string name="edt_number_chapters_per_seasons">Number of chapters per season</string>
+    <string name="edt_image">Image URL</string>
+    <string name="btn_register">Save serie</string>
+    <string name="btn_save_changes">Save changes</string>
+    <string name="btn_remove_serie">Remove serie</string>
+    <string name="btn_my_series">My Series</string>
+    <string name="btn_add">Add Serie</string>
+    <string name="btn_modify">Modify Serie</string>
+    <string name="tv_text_number_of_seasons">Seasons</string>
+    <string name="tv_number_of_seasons">seasons nº</string>
+    <string name="checkbox1">Chapter</string>
+    <string name="tv_title">Season</string>
+    <string name="fill_season">Season</string>
+    <string name="fill_chapter">Chapter</string>
+    <string name="title_activity_modify_serie">Modify Serie</string>
 </resources>

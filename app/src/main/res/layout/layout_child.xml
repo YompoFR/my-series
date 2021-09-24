@@ -17,6 +17,6 @@
         android:checked="false"
         android:focusable="false"
         android:focusableInTouchMode="false"
-        tools:text="Capítulo"/>
+        tools:text="@string/checkbox1"/>
 
 </LinearLayout>

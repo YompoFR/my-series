@@ -12,20 +12,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Mis Series" />
+        android:text="@string/btn_my_series" />
 
     <Button
         android:id="@+id/btnAdd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Añadir Serie" />
+        android:text="@string/btn_add" />
 
     <Button
         android:id="@+id/btnModify"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Modificar Serie" />
+        android:text="@string/btn_modify" />
 
 </LinearLayout>

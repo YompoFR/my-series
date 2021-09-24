@@ -44,7 +44,7 @@
                 android:layout_marginLeft="20dp"
                 android:textSize="21sp"
                 android:text="@string/underlined"
-                tools:text="Temporadas"/>
+                tools:text="@string/tv_text_number_of_seasons"/>
 
             <TextView
                 android:id="@+id/tvNumberOfSeasons"
@@ -53,7 +53,7 @@
                 android:textSize="18sp"
                 android:layout_marginTop="16dp"
                 android:layout_marginLeft="20dp"
-                tools:text="nº temp"/>
+                tools:text="@string/tv_number_of_seasons"/>
 
             </LinearLayout>
 
