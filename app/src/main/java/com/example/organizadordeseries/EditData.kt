@@ -34,9 +34,9 @@ class EditData : AppCompatActivity() {
         checkIntentInfo() // Comprobamos si el intent contiene datos
 
         btnRemoveSerie.setOnClickListener(){ // Establecemos una alerta para confirmar si eliminamos la serie
-            val title = this.getString(R.string.toast_btn_register)
-            val message = this.getString(R.string.toast_btn_register)
-            val positiveButtonText = this.getString(R.string.toast_btn_register)
+            val title = this.getString(R.string.builder_title)
+            val message = this.getString(R.string.builder_message)
+            val positiveButtonText = this.getString(R.string.builder_positive_button)
 
             val builder = AlertDialog.Builder(this)
             builder.setTitle(title)
@@ -112,7 +112,7 @@ class EditData : AppCompatActivity() {
         if (title.isEmpty()) {
             Toast.makeText(this, toastText, Toast.LENGTH_SHORT).show()
         } else {
-            toastText = this.getString(R.string.toast_btn_register)
+            toastText = this.getString(R.string.toast_saved_correctly)
             manageDatabase.updateDatabase(id, title, numberSeasons, numberChaptersPerSeason, image)
             Toast.makeText(this, toastText, Toast.LENGTH_SHORT).show()
         }

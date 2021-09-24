@@ -1,4 +1,4 @@
-#Fri Sep 24 10:50:40 CEST 2021
+#Fri Sep 24 11:24:24 CEST 2021
 base.0=C\:\\Users\\Ivan\\Documents\\MEGAsync\\Proyecto\\OrganizadordeSeries\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
