@@ -33,8 +33,9 @@ class ShowCurrentSerie : AppCompatActivity(){
             expandableShowCurrentSerie.setAdapter(ExpandableListAdapter(this, id, header, body)) // Establecemos el adapter de la lista expandible
 
         } catch (e: Exception){
+            val toastText = this.getString(R.string.exception)
             e.printStackTrace()
-            Toast.makeText(this, "Ha ocurrido un error", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, toastText, Toast.LENGTH_SHORT).show()
         }
     }
 

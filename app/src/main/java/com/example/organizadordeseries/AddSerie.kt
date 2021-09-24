@@ -28,12 +28,13 @@ class AddSerie : AppCompatActivity() {
 
         // Establecemos el botón de registrar
         btnRegister.setOnClickListener() {
+            val toastText = this.getString(R.string.toast_btn_register)
             try {
                 setFields()
                 checkTitleAndRegister()
                 cleanFields()
             } catch (e: NumberFormatException) { // Para evitar el error de pasar de String a Int al no poner número de temporadas
-                Toast.makeText(this, "No puede haber campos vacíos", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, toastText, Toast.LENGTH_SHORT).show()
                 cleanFields()
             }
         }
@@ -49,8 +50,9 @@ class AddSerie : AppCompatActivity() {
 
     // Comprobamos el título
     fun checkTitleAndRegister(){
+        val toastText = this.getString(R.string.toast_set_title)
         if (title.isEmpty()) {
-            Toast.makeText(this, "Es obligatorio poner un título", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, toastText, Toast.LENGTH_SHORT).show()
             cleanFields()
         }
         else { // Asignamos una imagen por defecto en caso de que no pongamos ninguna

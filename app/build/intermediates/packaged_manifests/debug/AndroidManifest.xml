@@ -31,7 +31,7 @@
             android:label="@string/title_activity_edit_data" />
         <activity
             android:name="com.example.organizadordeseries.ModifySerie"
-            android:label="Modificar serie" />
+            android:label="@string/title_activity_modify_serie" />
         <activity
             android:name="com.example.organizadordeseries.MySeries"
             android:label="@string/title_activity_following" />

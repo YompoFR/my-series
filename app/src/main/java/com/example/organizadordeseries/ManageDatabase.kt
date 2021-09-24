@@ -88,7 +88,8 @@ class ManageDatabase(contex: Context) {
             put(Utilities.COLUMN_IMAGE, image)
         }
         db?.insert(Utilities.TABLE_SERIES, null, values)
-        Toast.makeText(contex, "Serie registrada", Toast.LENGTH_SHORT).show()
+        val toastText = contex.getString(R.string.toast_saved_correctly)
+        Toast.makeText(contex, toastText, Toast.LENGTH_SHORT).show()
     }
 
     fun addSerie(cursor: Cursor) {

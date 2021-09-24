@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/ivan/MEGAsync/Proyecto/OrganizadordeSeries/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-round-v23/values-round-v23.xml",
+            "outputFile": "C:\\Users\\Ivan\\Documents\\MEGAsync\\Proyecto\\OrganizadordeSeries\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-round-v23\\values-round-v23.xml",
             "map": [
                 {
-                    "source": "/home/ivan/MEGAsync/Proyecto/OrganizadordeSeries/app/src/main/res/values-round/strings.xml",
+                    "source": "C:\\Users\\Ivan\\Documents\\MEGAsync\\Proyecto\\OrganizadordeSeries\\app\\src\\main\\res\\values-round\\strings.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/ivan/.gradle/caches/transforms-2/files-2.1/f88d5df7b256ef29f41dcc28d5b86640/wear-1.0.0/res/values-round-v23/values-round-v23.xml",
+                    "source": "C:\\Users\\Ivan\\.gradle\\caches\\transforms-2\\files-2.1\\f88d5df7b256ef29f41dcc28d5b86640\\wear-1.0.0\\res\\values-round-v23\\values-round-v23.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",

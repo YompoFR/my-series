@@ -25,6 +25,8 @@ class EditData : AppCompatActivity() {
     var numberChaptersPerSeason = 1
     var image = ""
 
+    lateinit var toastText : String
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_edit_data)
@@ -32,11 +34,15 @@ class EditData : AppCompatActivity() {
         checkIntentInfo() // Comprobamos si el intent contiene datos
 
         btnRemoveSerie.setOnClickListener(){ // Establecemos una alerta para confirmar si eliminamos la serie
-            val builder = AlertDialog.Builder(this)
-            builder.setTitle("¿Estás seguro?")
-            builder.setMessage("¿Deseas eliminar la serie?")
+            val title = this.getString(R.string.toast_btn_register)
+            val message = this.getString(R.string.toast_btn_register)
+            val positiveButtonText = this.getString(R.string.toast_btn_register)
 
-            builder.setPositiveButton("Sí"){ dialogInterface: DialogInterface, i: Int ->
+            val builder = AlertDialog.Builder(this)
+            builder.setTitle(title)
+            builder.setMessage(message)
+
+            builder.setPositiveButton(positiveButtonText){ dialogInterface: DialogInterface, i: Int ->
                 manageDatabase.removeSerie(id) // En caso afirmativo se elimina la serie
                 finish()
             }
@@ -46,16 +52,18 @@ class EditData : AppCompatActivity() {
         }
 
         btnSaveChanges.setOnClickListener() {
+            toastText = this.getString(R.string.btn_save_changes_number_format_exception)
             try {
                 modifySerie()
             } catch (numberError: NumberFormatException) {
                 Toast.makeText(
                     this,
-                    "Debes introducir al menos un número de temporada/capítulos",
+                    toastText,
                     Toast.LENGTH_SHORT
                 ).show()
             } catch (e: Exception) {
-                Toast.makeText(this, "Ha ocurrido un error", Toast.LENGTH_SHORT).show()
+                toastText = this.getString(R.string.exception)
+                Toast.makeText(this, toastText, Toast.LENGTH_SHORT).show()
                 e.printStackTrace()
             }
         }
@@ -100,11 +108,13 @@ class EditData : AppCompatActivity() {
 
     // Asignamos la información
     private fun assignInfo() {
+        toastText = this.getString(R.string.toast_set_title)
         if (title.isEmpty()) {
-            Toast.makeText(this, "¡Debes poner un título!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, toastText, Toast.LENGTH_SHORT).show()
         } else {
+            toastText = this.getString(R.string.toast_btn_register)
             manageDatabase.updateDatabase(id, title, numberSeasons, numberChaptersPerSeason, image)
-            Toast.makeText(this, "¡Guardado correctamente!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, toastText, Toast.LENGTH_SHORT).show()
         }
     }
 }

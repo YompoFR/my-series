@@ -45,8 +45,9 @@ class ExpandableListAdapter(
         title?.text = getGroup(groupPosition)
 
         if (isExpanded){
+            val toastText = context.getString(R.string.toast_number_of_chapters) + " "
             var numberChapters = manageDatabase.showSeasonsChapters(serieId, groupPosition + 1)
-            Toast.makeText(context, "Número de capítulos: $numberChapters", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "$toastText  $numberChapters", Toast.LENGTH_SHORT).show()
         }
 
         return convertView

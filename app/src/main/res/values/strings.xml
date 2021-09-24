@@ -28,4 +28,14 @@
     <string name="fill_season">Season</string>
     <string name="fill_chapter">Chapter</string>
     <string name="title_activity_modify_serie">Modify Serie</string>
+    <string name="toast_btn_register">You must filll all fields</string>
+    <string name="toast_set_title">You must to set a title</string>
+    <string name="builder_title">Are you sure?</string>
+    <string name="builder_message">¿Do you want to remove the serie?</string>
+    <string name="builder_positive_button">Yes</string>
+    <string name="btn_save_changes_number_format_exception">You have to introduce at least one number</string>
+    <string name="exception">An error has ocurred</string>
+    <string name="toast_saved_correctly">Saved correctly</string>
+    <string name="toast_number_of_chapters">Number of chapters</string>
+    <string name="toast_number_of_series">Number of series</string>
 </resources>

@@ -25,7 +25,8 @@ class MySeries : AppCompatActivity(), SerieAdapter.OnSerieClickListener {
         setContentView(R.layout.activity_my_series)
 
         initRecycler() // Inicamos el reclycler para que nos muestre la lista
-        Toast.makeText(this, "Número de series: " + listSerie.size, Toast.LENGTH_SHORT).show()
+        val toastText = this.getString(R.string.toast_number_of_series) + " "
+        Toast.makeText(this, "$toastText $listSerie.size", Toast.LENGTH_SHORT).show()
     }
 
     fun initRecycler() {
